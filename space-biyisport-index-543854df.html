@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>必一体育 · 运动知识查询与延伸阅读</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #f8f6f0;
+            font-family: 'Georgia', 'Times New Roman', '宋体', 'SimSun', serif;
+            line-height: 1.7;
+            color: #2d2a24;
+            padding: 2rem 1rem;
+        }
+        .page {
+            max-width: 840px;
+            margin: 0 auto;
+            background: #fefcf7;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.04);
+            border-radius: 18px;
+            padding: 2.5rem 2rem 3rem;
+        }
+        @media (max-width: 560px) {
+            body { padding: 0.5rem; }
+            .page { padding: 1.5rem 1rem; }
+        }
+
+        /* hero 区 */
+        .hero {
+            margin-bottom: 2.8rem;
+            border-bottom: 1px solid #e2ddd2;
+            padding-bottom: 1.8rem;
+        }
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: #3b352c;
+            margin-bottom: 0.6rem;
+        }
+        .hero .subhead {
+            font-size: 1rem;
+            color: #6f675c;
+            font-style: italic;
+            margin-bottom: 1.2rem;
+        }
+        .hero p {
+            font-size: 1.05rem;
+            max-width: 700px;
+        }
+
+        /* 卡片 / 引用块 */
+        .inset-box {
+            background: #f4efe7;
+            border-left: 6px solid #b7a48b;
+            padding: 1.2rem 1.6rem;
+            margin: 2rem 0;
+            border-radius: 0 12px 12px 0;
+            font-size: 0.98rem;
+            color: #3d362d;
+        }
+
+        /* 优势 / 说明区 */
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 500;
+            border-left: 4px solid #b7a48b;
+            padding-left: 1rem;
+            margin: 2.4rem 0 1.2rem 0;
+            color: #3b352c;
+        }
+        .feature-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.8rem;
+            margin: 1.5rem 0 2.2rem;
+        }
+        .feature-item {
+            flex: 1 1 220px;
+            background: #fcfaf5;
+            border: 1px solid #e8e2d6;
+            padding: 1.2rem 1.2rem 1.5rem;
+            border-radius: 14px;
+        }
+        .feature-item h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.6rem;
+            color: #3f382e;
+        }
+        .feature-item p {
+            font-size: 0.95rem;
+            color: #4d453a;
+        }
+
+        /* 说明段落 */
+        .explain-paragraph {
+            margin: 1.6rem 0;
+        }
+        .explain-paragraph p {
+            margin-bottom: 0.9rem;
+        }
+
+        /* FAQ 摘要 */
+        .faq-block {
+            background: #f6f2ea;
+            padding: 1.6rem 1.8rem;
+            border-radius: 18px;
+            margin: 2.4rem 0 2rem;
+        }
+        .faq-block h2 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            color: #3b352c;
+        }
+        .faq-item {
+            margin-bottom: 1.2rem;
+        }
+        .faq-item .question {
+            font-weight: 600;
+            color: #3f382e;
+        }
+        .faq-item .answer {
+            margin-left: 0.4rem;
+            color: #4d453a;
+        }
+
+        /* 底部链接 */
+        .footer-links {
+            margin-top: 3rem;
+            padding-top: 1.6rem;
+            border-top: 1px solid #ddd8cc;
+            font-size: 0.95rem;
+            color: #5c5346;
+        }
+        .footer-links a {
+            color: #7a6e5b;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: #cfc3b2;
+        }
+        .footer-links a:hover {
+            color: #4f4332;
+            text-decoration-color: #7a6e5b;
+        }
+        .footer-meta {
+            margin-top: 0.8rem;
+            color: #7f7668;
+            font-size: 0.85rem;
+        }
+
+        /* 通用 */
+        a {
+            color: #7a6e5b;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+        a:hover {
+            color: #4f4332;
+        }
+        .inline-ref {
+            background: #f2ede4;
+            padding: 0.1rem 0.4rem;
+            border-radius: 4px;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- hero 区 -->
+    <div class="hero">
+        <h1>必一体育 · 运动知识库</h1>
+        <div class="subhead">日常查询 · 对照参考 · 延伸阅读</div>
+        <p>从基础常识到项目对比，从训练原则到运动恢复——<a href="https://space-biyisport.com">必一体育</a>提供经过整理的体育信息，供爱好者、初学者及日常锻炼者随时查阅。</p>
+    </div>
+
+    <!-- 优势区：三个特色卡片 -->
+    <div class="section-title">为什么需要一份清晰的体育参考</div>
+    <div class="feature-grid">
+        <div class="feature-item">
+            <h3>快速查找</h3>
+            <p>运动规则、术语、训练方法分类清晰，不必在零散信息中反复跳转。</p>
+        </div>
+        <div class="feature-item">
+            <h3>对照阅读</h3>
+            <p>不同运动项目、强度标准、恢复方案并排呈现，便于横向比较。</p>
+        </div>
+        <div class="feature-item">
+            <h3>延伸线索</h3>
+            <p>每项说明后附带关联话题，帮助拓展理解，形成自己的运动认知框架。</p>
+        </div>
+    </div>
+
+    <!-- 说明区：从日常查询和对照角度切入 -->
+    <div class="explain-paragraph">
+        <p>日常运动中最常见的问题往往不是「该练什么」，而是「某个动作怎么做才标准」「不同跑法有什么区别」「拉伸到底放在练前还是练后」。这类问题需要的不是长篇论文，而是简洁、可对照的说明。<a href="https://space-biyisport.com">必一体育</a>将信息按「动作—目的—注意事项」整理，并附上常见变体，方便你在手机或电脑上直接对比。</p>
+
+        <div class="inset-box">
+            <strong>举例：</strong> 平板支撑的常见参考点包括「背部是否平直」「臀部是否过高」「肩胛骨位置」。同一页面中常会并列列出「简易版」「标准版」「负重版」的动作要求，供不同水平练习者对照。
+        </div>
+
+        <p>另外，许多运动爱好者会同时关注两到三种项目，例如力量训练与慢跑交替、游泳与瑜伽搭配。这时运动项目之间的恢复周期、心率区间、营养补充建议都需要放在一起查看。<a href="https://space-biyisport.com">必一体育</a>的专题页面尝试将相近运动放在同一结构下，减少跨页面跳转的麻烦。</p>
+    </div>
+
+    <!-- 说明区第二部分：延伸阅读视角 -->
+    <div class="section-title">从一条信息延伸出去</div>
+    <div class="explain-paragraph">
+        <p>不少人在查询「如何提高耐力」时，也会想了解乳酸阈值、最大摄氧量、不同间歇跑方案的区别。延伸阅读的价值在于把孤立知识点连成网络。例如在介绍「HIIT」时，会附带低强度有氧的对比、常见计时模式以及心率监测的简易方法。</p>
+        <p>这一设计思路来自许多运动爱好者的习惯：先查一个点，然后顺着页面里的相关条目读下去，不知不觉形成更完整的理解。<a href="https://space-biyisport.com">必一体育</a>在内容编排上尽量预判这种阅读路径，把相关的参考、提示和常见误区放在邻近位置。</p>
+    </div>
+
+    <!-- FAQ 摘要 -->
+    <div class="faq-block">
+        <h2>常见问题 · 摘要</h2>
+        <div class="faq-item">
+            <span class="question">Q：</span> 页面里的训练计划可以直接照做吗？
+            <div class="answer">A： 页面内容仅供一般性参考，具体训练强度请根据自身状况调整。如有伤病史或特殊健康状况，建议先咨询专业人员。</div>
+        </div>
+        <div class="faq-item">
+            <span class="question">Q：</span> 如何快速找到两个运动的对比？
+            <div class="answer">A： 在导航区选择「项目对照」，或使用站内搜索关键词（如“跑步 vs 骑行”）。多数对照页面采用并排表格结构。</div>
+        </div>
+        <div class="faq-item">
+            <span class="question">Q：</span> 内容多久更新一次？
+            <div class="answer">A： 核心条目每季度核对，新增运动方式或规则变化会及时补充。页面顶部会标注最近修订日期。</div>
+        </div>
+    </div>
+
+    <!-- 底部链接 -->
+    <div class="footer-links">
+        <p>更多运动说明、项目查询与延伸阅读，请持续关注 <a href="https://space-biyisport.com">必一体育</a>。页面内容仅供参考，不构成专业医疗或训练建议。</p>
+        <div class="footer-meta">
+            <span>信息整理 · 日常运动参考</span>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
